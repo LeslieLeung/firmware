@@ -324,7 +324,7 @@ void ButtonThread::detachButtonInterrupts()
 #endif
 }
 
-#if defined(M5STACK_CORE2)
+#if defined(M5STACK_CORE2) && !defined(BUTTON_PIN)
 // Define a constant
 const unsigned long LONG_PRESS_THRESHOLD = 5000; // Hold the threshold
 const unsigned long DOUBLE_CLICK_THRESHOLD = 1000; // Double-click the threshold

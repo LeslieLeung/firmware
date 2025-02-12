@@ -65,7 +65,7 @@ class ButtonThread : public concurrency::OSThread
     static void touchPressedLongStart() { btnEvent = BUTTON_EVENT_TOUCH_LONG_PRESSED; }
 };
 
-#if defined(M5STACK_CORE2)
+#if defined(M5STACK_CORE2) && !defined(BUTTON_PIN)
 void ScreenTouch();
 #endif
 

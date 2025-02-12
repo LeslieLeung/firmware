@@ -1,7 +1,7 @@
 // #define BUTTON_NEED_PULLUP // if set we need to turn on the internal CPU pullup during sleep
 
 
-// #define BUTTON_PIN 39 // 38, 37
+#define BUTTON_PIN 39 // 38, 37
 // #define BUTTON_PIN 0
 #define BUTTON_NEED_PULLUP
 // #define EXT_NOTIFY_OUT 13 // Default pin to use for Ext Notify Plugin.
@@ -25,6 +25,10 @@
 #define LORA_RESET 19
 #define LORA_DIO1 RADIOLIB_NC // Not really used
 #define LORA_DIO2 RADIOLIB_NC // Not really used
+
+#define HAS_AXP192
+#define I2C_SDA 21
+#define I2C_SCL 22
 
 // This board has different GPS pins than all other boards
 #undef GPS_RX_PIN
